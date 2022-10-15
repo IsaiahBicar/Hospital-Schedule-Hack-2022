@@ -4,7 +4,10 @@ public class Department {
     private String deptName;
     private int numNurses;
     private int maxNurseCapacity;
+    private int minNurseCapacity;
+    public Department( String deptName, int numNurses, int maxNurseCapacity, int minNurseCapacity){
 
+    }
     public int getMaxNurseCapacity() {
         return maxNurseCapacity;
     }
@@ -29,10 +32,16 @@ public class Department {
         this.numNurses = numNurses;
     }
 
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter department name: ");
+    public static void display(Department department) {
+        System.out.println(department.deptName);
+        System.out.println(department.maxNurseCapacity);
+        System.out.println(department.minNurseCapacity);
+        System.out.println(department.numNurses);
 
+    }
+    public static void main(String[] args){
+        Department department = new Department("ICU", 10, 15, 5 );
+        display(department);
     }
 }
 
