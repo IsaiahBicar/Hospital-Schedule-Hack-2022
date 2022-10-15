@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Department {
     private String deptName;
     private int numNurses;
@@ -10,7 +12,8 @@ public class Department {
     public int getNumNurses() {
         return numNurses;
     }
-    public String getDeptName(){
+
+    public String getDeptName() {
         return deptName;
     }
 
@@ -25,6 +28,13 @@ public class Department {
     public void setNumNurses(int numNurses) {
         this.numNurses = numNurses;
     }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter department name: ");
+
+    }
 }
+
 
 

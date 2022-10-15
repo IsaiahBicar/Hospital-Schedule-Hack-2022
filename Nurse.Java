@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Nurse{
     private String name;
     private int id;
@@ -24,4 +26,6 @@ public class Nurse{
     }
 
 
+
+}
 }
