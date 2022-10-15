@@ -1,8 +1,8 @@
 public class Nurse{
-    private String name;
-    private int id;
-    private String department;
-    private String position;
+    public String name;
+    public int id;
+    public String department;
+    public String position;
 
     public void setName(String name){
         this.name = name;
